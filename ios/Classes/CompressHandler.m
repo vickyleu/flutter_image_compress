@@ -26,8 +26,12 @@
         NSLog(@"minHeight = %d",minHeight);
         NSLog(@"format = %d", format);
     }
+    if(minWidth<=-1||minHeight<=-1){
 
+    }else{
     image = [image scaleWithMinWidth:minWidth minHeight:minHeight];
+    }
+
     if(rotate % 360 != 0){
         image = [image rotate: rotate];
     }
