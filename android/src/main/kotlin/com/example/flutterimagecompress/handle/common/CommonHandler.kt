@@ -68,7 +68,7 @@ class CommonHandler(override val type: Int) : FormatHandler {
     log("src width = $w")
     log("src height = $h")
 
-    val scale = if(minWidt<=-1||minHeight<=-1){1}else{bitmap.calcScale(minWidth, minHeight)}
+    val scale = if(minWidth<=-1||minHeight<=-1){(1.0).toFloat()}else{bitmap.calcScale(minWidth, minHeight)}
 
     log("scale = $scale")
 
