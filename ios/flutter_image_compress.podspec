@@ -18,5 +18,6 @@ A new flutter plugin project.
   s.dependency 'Mantle'
   s.ios.deployment_target = '8.0'
   s.dependency 'SDWebImageWebPCoder'
+  s.dependency "SDWebImage/Core","5.0.0-beta"
 end
 
